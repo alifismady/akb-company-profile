@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "companyProfile": {
+      "title": "Company Profile",
+      "description": "YourCompany is dedicated to providing top-notch services to help you succeed."
+    },
+    "visionMission": {
+      "title": "Vision and Mission",
+      "description": "Our vision is to be the leading provider of exceptional services, and our mission is to empower our clients to achieve their goals."
+    },
+    "specialty": {
+      "title": "Specialty",
+      "description": "We specialize in delivering innovative solutions tailored to meet the unique needs of our clients."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "services": [
+      "Service One",
+      "Service Two",
+      "Service Three"
+    ]
+  },
+  "scope": {
+    "title": "Scope of Services",
+    "industries": [
+      "Industry One",
+      "Industry Two",
+      "Industry Three",
+      "Industry Four",
+      "Industry Five",
+      "Industry Six",
+      "Industry Seven",
+      "Industry Eight"
+    ],
+    "serviceScopes": [
+      "Service Scope One",
+      "Service Scope Two",
+      "Service Scope Three",
+      "Service Scope Four",
+      "Service Scope Five",
+      "Service Scope Six",
+      "Service Scope Seven",
+      "Service Scope Eight",
+      "Service Scope Nine",
+      "Service Scope Ten"
+    ]
+  },
+  "portfolio": {
+    "clients": "Our Clients",
+    "exampleWorks": "Example Works"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us"
+  }
+}

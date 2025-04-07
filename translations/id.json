@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "companyProfile": {
+      "title": "Profil Perusahaan",
+      "description": "YourCompany berdedikasi untuk memberikan layanan terbaik untuk membantu Anda sukses."
+    },
+    "visionMission": {
+      "title": "Visi dan Misi",
+      "description": "Visi kami adalah menjadi penyedia layanan luar biasa terkemuka, dan misi kami adalah memberdayakan klien kami untuk mencapai tujuan mereka."
+    },
+    "specialty": {
+      "title": "Spesialisasi",
+      "description": "Kami mengkhususkan diri dalam memberikan solusi inovatif yang disesuaikan untuk memenuhi kebutuhan unik klien kami."
+    }
+  },
+  "services": {
+    "title": "Layanan Kami",
+    "services": [
+      "Layanan Satu",
+      "Layanan Dua",
+      "Layanan Tiga"
+    ]
+  },
+  "scope": {
+    "title": "Ruang Lingkup Layanan",
+    "industries": [
+      "Industri Satu",
+      "Industri Dua",
+      "Industri Tiga",
+      "Industri Empat",
+      "Industri Lima",
+      "Industri Enam",
+      "Industri Tujuh",
+      "Industri Delapan"
+    ],
+    "serviceScopes": [
+      "Ruang Lingkup Layanan Satu",
+      "Ruang Lingkup Layanan Dua",
+      "Ruang Lingkup Layanan Tiga",
+      "Ruang Lingkup Layanan Empat",
+      "Ruang Lingkup Layanan Lima",
+      "Ruang Lingkup Layanan Enam",
+      "Ruang Lingkup Layanan Tujuh",
+      "Ruang Lingkup Layanan Delapan",
+      "Ruang Lingkup Layanan Sembilan",
+      "Ruang Lingkup Layanan Sepuluh"
+    ]
+  },
+  "portfolio": {
+    "clients": "Klien Kami",
+    "exampleWorks": "Contoh Karya"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "location": "Lokasi",
+    "phone": "Telepon",
+    "email": "Email",
+    "followUs": "Ikuti Kami"
+  }
+}
