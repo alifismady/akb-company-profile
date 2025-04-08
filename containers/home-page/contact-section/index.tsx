@@ -4,7 +4,7 @@
 import type React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { MapPin, Phone, Mail, Instagram} from "lucide-react"
 import Link from "next/link"
 
 const ContactUsSection: React.FC = () => {
