@@ -33,13 +33,13 @@ const ScopeSection: React.FC = () => {
   ]
 
   return (
-    <section className="py-16 ">
+    <section id="scope" className="py-16 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#163868] mb-4">Sektor Industri</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          {/* <p className="text-slate-600 max-w-2xl mx-auto">
             Kami melayani berbagai sektor industri dengan solusi kalibrasi yang presisi dan terpercaya
-          </p>
+          </p> */}
         </div>
 
         {/* Industries Section - All displayed in a grid */}
@@ -69,9 +69,9 @@ const ScopeSection: React.FC = () => {
         {/* Scope of Services Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#163868] mb-4">Ruang Lingkup</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          {/* <p className="text-slate-600 max-w-2xl mx-auto">
             Layanan kalibrasi kami mencakup berbagai parameter pengukuran
-          </p>
+          </p> */}
         </div>
 
         <Card className="border-none shadow-lg">
