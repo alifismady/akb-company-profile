@@ -47,25 +47,25 @@ const Navbar = () => {
                     onClick={() => scrollToSection('home')}
                     className="text-left rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
                   >
-                    About Us
+                    Tentang Kami
                   </button>
                   <button
                     onClick={() => scrollToSection('services')}
                     className="text-left rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
                   >
-                    Services
+                    Pelayanan
                   </button>
                   <button
                     onClick={() => scrollToSection('scope')}
                     className="text-left rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
                   >
-                    Industries and Scope
+                    Industri dan Lingkup
                   </button>
                   <button
                     onClick={() => scrollToSection('client')}
                     className="text-left rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
                   >
-                    Client
+                    Klien
                   </button>
                   <button
                     onClick={() => scrollToSection('portofolio')}
@@ -77,7 +77,7 @@ const Navbar = () => {
                     onClick={() => scrollToSection('contact')}
                     className="text-left rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
                   >
-                    Contact Us
+                    Kontak Kami
                   </button>
                 </nav>
                 <div className="pt-4 pl-2 mt-auto border-t">
@@ -92,9 +92,9 @@ const Navbar = () => {
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
-                      <DropdownMenuItem onClick={() => setLanguage('en')}>
+                      {/* <DropdownMenuItem onClick={() => setLanguage('en')}>
                         English
-                      </DropdownMenuItem>
+                      </DropdownMenuItem> */}
                       <DropdownMenuItem onClick={() => setLanguage('id')}>
                         Indonesia
                       </DropdownMenuItem>
@@ -131,25 +131,25 @@ const Navbar = () => {
             onClick={() => scrollToSection('home')}
             className="rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
           >
-            About Us
+            Tentang Kami
           </button>
           <button
             onClick={() => scrollToSection('services')}
             className="rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
           >
-            Services
+            Pelayanan
           </button>
           <button
             onClick={() => scrollToSection('scope')}
             className="rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
           >
-            Industries and Scope
+            Industri dan Lingkup
           </button>
           <button
             onClick={() => scrollToSection('client')}
             className="rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
           >
-            Client
+            Klien
           </button>
           <button
             onClick={() => scrollToSection('portofolio')}
@@ -161,12 +161,10 @@ const Navbar = () => {
             onClick={() => scrollToSection('contact')}
             className="rounded-md px-3 py-2 text-[#163868] hover:bg-accent"
           >
-            Contact Us
+            Kontak Kami
           </button>
-          {/* Add more section buttons as needed */}
         </nav>
 
-        {/* Language selector with icon */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="ml-auto md:ml-0">
@@ -177,9 +175,9 @@ const Navbar = () => {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => setLanguage('en')}>
+            {/* <DropdownMenuItem onClick={() => setLanguage('en')}>
               English
-            </DropdownMenuItem>
+            </DropdownMenuItem> */}
             <DropdownMenuItem onClick={() => setLanguage('id')}>
               Indonesia
             </DropdownMenuItem>

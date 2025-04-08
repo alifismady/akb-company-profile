@@ -24,7 +24,7 @@ const ContactUsSection: React.FC = () => {
     <section id='contact' className="bg-light-grey py-12">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-[#163868] mb-12">
-          Contact Us
+          Kontak Kami
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -36,7 +36,7 @@ const ContactUsSection: React.FC = () => {
                   <MapPin className="h-6 w-6 text-[#163868] mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-semibold text-[#163868]">
-                      Location
+                      Lokasi
                     </h3>
                     <Link
                       href={getGoogleMapsUrl(addressQuery)}
@@ -92,7 +92,7 @@ const ContactUsSection: React.FC = () => {
                     </h3>
                     <Link
                       href="mailto:ptanugerahkalibrasipratama@gmail.com"
-                      className="text-gray-700 hover:text-[#163868] hover:underline transition-colors"
+                      className="text-gray-700 text-md md:text-xs hover:text-[#163868] hover:underline transition-colors"
                     >
                       ptanugerahkalibrasipratama@gmail.com
                     </Link>
@@ -101,7 +101,7 @@ const ContactUsSection: React.FC = () => {
 
                 <div>
                   <h3 className="text-xl font-semibold text-[#163868] mb-3">
-                    Follow Us
+                    Ikuti Kami
                   </h3>
                   <div className="flex space-x-4">
                     <Button
