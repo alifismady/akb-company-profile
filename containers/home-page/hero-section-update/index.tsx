@@ -78,30 +78,68 @@ export default function CompanyHeroSection() {
     },
   }
 
-  // Helper function to render content
-  const renderContent = (key: keyof ContentData) => (
-    <>
-      <div className="mb-4">
-        <h3
-          className={
-            isMobile ? 'text-xl font-semibold text-[#163868]' : 'hidden'
-          }
-        >
-          {content[key].title}
-        </h3>
-      </div>
-      <p className="text-gray-700">{content[key].description}</p>
-      {content[key].list && (
-        <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
-          {content[key].list?.map((item, index) => (
-            <li key={index} className="ml-2">
-              {item}
-            </li>
-          ))}
-        </ul>
-      )}
-    </>
-  )
+  const renderContent = (key: keyof ContentData) => {
+    if (key === 'visionMission') {
+      return (
+        <>
+          {/* Mission Section */}
+          <div className="mb-4">
+            <h3
+              className={
+                isMobile ? 'text-xl font-semibold text-[#163868]' : 'hidden'
+              }
+            >
+              Misi
+            </h3>
+          </div>
+          <p className="text-gray-700">{content[key].description}</p>
+
+          {/* Vision Section */}
+          <div className="mb-4 mt-6">
+            <h3
+              className={
+                isMobile ? 'text-xl font-semibold text-[#163868]' : 'hidden'
+              }
+            >
+              Visi
+            </h3>
+          </div>
+          <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
+            {content[key].list?.map((item, index) => (
+              <li key={index} className="ml-2">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+
+    // Default rendering for other content types
+    return (
+      <>
+        <div className="mb-4">
+          <h3
+            className={
+              isMobile ? 'text-xl font-semibold text-[#163868]' : 'hidden'
+            }
+          >
+            {content[key].title}
+          </h3>
+        </div>
+        <p className="text-gray-700">{content[key].description}</p>
+        {content[key].list && (
+          <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
+            {content[key].list?.map((item, index) => (
+              <li key={index} className="ml-2">
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
+      </>
+    )
+  }
 
   return (
     <section id="home" className="bg-light-grey py-12">
@@ -246,12 +284,17 @@ export default function CompanyHeroSection() {
                 <TabsContent value="visionMission">
                   <CardHeader className="px-0 pt-0">
                     <CardTitle className="text-2xl font-semibold text-[#163868] text-center">
-                      {content.visionMission.title}
+                      Misi
                     </CardTitle>
                   </CardHeader>
                   <p className="text-gray-700">
                     {content.visionMission.description}
                   </p>
+                  <div className="mb-4 mt-6">
+                    <h3 className={'text-2xl text-center font-semibold text-[#163868]'}>
+                      Visi
+                    </h3>
+                  </div>
                   <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
                     {content.visionMission.list?.map((item, index) => (
                       <li key={index} className="ml-2">
