@@ -91,10 +91,10 @@ const ContactUsSection: React.FC = () => {
                       Email
                     </h3>
                     <Link
-                      href="mailto:ptanugerahkalibrasipratama@gmail.com"
-                      className="text-gray-700 text-md md:text-xs hover:text-[#163868] hover:underline transition-colors"
+                      href="mailto:info@anugerahkalibrasipratama.com"
+                      className="text-gray-700 text-md md:text-md hover:text-[#163868] hover:underline transition-colors"
                     >
-                      ptanugerahkalibrasipratama@gmail.com
+                      info@anugerahkalibrasipratama.com
                     </Link>
                   </div>
                 </div>
