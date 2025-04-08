@@ -1,11 +1,17 @@
-"use client"
+'use client'
 
-import { useState, useEffect } from "react"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Building, Target, Award, Download } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from 'react'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Building, Target, Award, Download } from 'lucide-react'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 interface ContentItem {
   title: string
@@ -20,7 +26,7 @@ interface ContentData {
 }
 
 export default function CompanyHeroSection() {
-  const [selectedContent, setSelectedContent] = useState("aboutUs")
+  const [selectedContent, setSelectedContent] = useState('aboutUs')
   const [isMobile, setIsMobile] = useState(false)
 
   // Check if we're on mobile
@@ -33,41 +39,41 @@ export default function CompanyHeroSection() {
     checkIfMobile()
 
     // Add event listener for window resize
-    window.addEventListener("resize", checkIfMobile)
+    window.addEventListener('resize', checkIfMobile)
 
     // Cleanup
-    return () => window.removeEventListener("resize", checkIfMobile)
+    return () => window.removeEventListener('resize', checkIfMobile)
   }, [])
 
   const content: ContentData = {
     aboutUs: {
-      title: "Tentang Perusahaan",
+      title: 'Tentang Perusahaan',
       description:
-        "PT Anugerah Kalibrasi Pratama adalah perusahaan yang bergerak di bidang jasa sertifikasi dan kalibrasi peralatan ukur yang diakreditasi oleh Komite Akreditasi Nasional (KAN) sesuai dengan standar ISO/IEC 17025. Didirikan pada 15 Februari 2025, perusahaan ini berkomitmen untuk memberikan layanan kalibrasi yang akurat, terpercaya, dan sesuai dengan standar internasional. Sebagai mitra bagi industri dan laboratorium di berbagai sektor, PT Anugerah Kalibrasi Pratama menghadirkan solusi kalibrasi yang memastikan keakuratan dan konsistensi alat ukur. Dengan dukungan tenaga ahli berpengalaman dan peralatan kalibrasi modern, kami berupaya untuk menjaga kualitas pengukuran yang optimal guna mendukung efisiensi operasional dan kepatuhan terhadap regulasi yang berlaku.",
+        'PT Anugerah Kalibrasi Pratama adalah perusahaan yang bergerak di bidang jasa sertifikasi dan kalibrasi peralatan ukur yang diakreditasi oleh Komite Akreditasi Nasional (KAN) sesuai dengan standar ISO/IEC 17025. Didirikan pada 15 Februari 2025, perusahaan ini berkomitmen untuk memberikan layanan kalibrasi yang akurat, terpercaya, dan sesuai dengan standar internasional. Sebagai mitra bagi industri dan laboratorium di berbagai sektor, PT Anugerah Kalibrasi Pratama menghadirkan solusi kalibrasi yang memastikan keakuratan dan konsistensi alat ukur. Dengan dukungan tenaga ahli berpengalaman dan peralatan kalibrasi modern, kami berupaya untuk menjaga kualitas pengukuran yang optimal guna mendukung efisiensi operasional dan kepatuhan terhadap regulasi yang berlaku.',
     },
     visionMission: {
-      title: "Visi dan Misi",
+      title: 'Visi dan Misi',
       description:
-        "Menjadi perusahaan kalibrasi terkemuka di Indonesia yang memberikan layanan berkualitas tinggi sesuai dengan standar internasional.",
+        'Menjadi perusahaan kalibrasi terkemuka di Indonesia yang memberikan layanan berkualitas tinggi sesuai dengan standar internasional.',
       list: [
-        "Menyediakan layanan kalibrasi yang akurat, cepat, dan sesuai dengan standar ISO/IEC 17025.",
-        "Meningkatkan kompetensi industri melalui konsultasi dan pelatihan di bidang kalibrasi.",
-        "Mengembangkan inovasi dalam layanan kalibrasi untuk mendukung kebutuhan industri yang terus berkembang.",
-        "Menjaga kepuasan pelanggan dengan layanan profesional dan solusi yang tepat.",
-        "Berkontribusi dalam peningkatan kualitas industri nasional melalui kepatuhan terhadap standar pengukuran global.",
+        'Menyediakan layanan kalibrasi yang akurat, cepat, dan sesuai dengan standar ISO/IEC 17025.',
+        'Meningkatkan kompetensi industri melalui konsultasi dan pelatihan di bidang kalibrasi.',
+        'Mengembangkan inovasi dalam layanan kalibrasi untuk mendukung kebutuhan industri yang terus berkembang.',
+        'Menjaga kepuasan pelanggan dengan layanan profesional dan solusi yang tepat.',
+        'Berkontribusi dalam peningkatan kualitas industri nasional melalui kepatuhan terhadap standar pengukuran global.',
       ],
     },
     specialty: {
-      title: "Keahlian Kami",
+      title: 'Keahlian Kami',
       description:
-        "Di PT Anugerah Kalibrasi Pratama, kami bangga dengan keahlian kami dalam kalibrasi, memastikan pengukuran yang presisi dan andal sesuai dengan standar ISO/IEC 17025. Tim profesional kami berkomitmen untuk memberikan layanan kalibrasi berkualitas tinggi untuk berbagai industri.",
+        'Di PT Anugerah Kalibrasi Pratama, kami bangga dengan keahlian kami dalam kalibrasi, memastikan pengukuran yang presisi dan andal sesuai dengan standar ISO/IEC 17025. Tim profesional kami berkomitmen untuk memberikan layanan kalibrasi berkualitas tinggi untuk berbagai industri.',
       list: [
-        "Layanan Kalibrasi Terakreditasi",
-        "Tim Berpengalaman & Bersertifikasi",
-        "Solusi Kalibrasi yang Komperhensif",
-        "Peralatan Canggih & Modern",
-        "Komitmen terhadap Kualitas & Akurasi",
-        "Pendekatan Berorientasi Pelanggan",
+        'Layanan Kalibrasi Terakreditasi',
+        'Tim Berpengalaman & Bersertifikasi',
+        'Solusi Kalibrasi yang Komperhensif',
+        'Peralatan Canggih & Modern',
+        'Komitmen terhadap Kualitas & Akurasi',
+        'Pendekatan Berorientasi Pelanggan',
       ],
     },
   }
@@ -76,7 +82,13 @@ export default function CompanyHeroSection() {
   const renderContent = (key: keyof ContentData) => (
     <>
       <div className="mb-4">
-        <h3 className={isMobile ? "text-xl font-semibold text-[#163868]" : "hidden"}>{content[key].title}</h3>
+        <h3
+          className={
+            isMobile ? 'text-xl font-semibold text-[#163868]' : 'hidden'
+          }
+        >
+          {content[key].title}
+        </h3>
       </div>
       <p className="text-gray-700">{content[key].description}</p>
       {content[key].list && (
@@ -94,6 +106,35 @@ export default function CompanyHeroSection() {
   return (
     <section id="home" className="bg-light-grey py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center mt-16 md:mt-24 lg:mt-32">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="p-3 flex items-center justify-center h-32">
+            <Image
+              src="/images/akb-logo.jpeg"
+              alt="KAN Certification"
+              width={120}
+              height={120}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+          <div className="p-3 flex items-center justify-center h-32">
+            <Image
+              src="/images/certifications/iso-logo.png"
+              alt="ISO Certification"
+              width={120}
+              height={120}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+          <div className="p-3 flex items-center justify-center h-32">
+            <Image
+              src="/images/certifications/kan-logo.png"
+              alt="KAN Certification"
+              width={120}
+              height={120}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+        </div> */}
         <h1 className="text-3xl md:text-4xl font-bold text-[#163868] mb-8 text-center">
           Welcome to Anugerah Kalibrasi Pratama
         </h1>
@@ -109,15 +150,17 @@ export default function CompanyHeroSection() {
                     <span>Tentang Kami</span>
                   </AccordionTrigger>
                   <AccordionContent className="pt-4 pb-6">
-                    {renderContent("aboutUs")}
+                    {renderContent('aboutUs')}
                     <div className="mt-4">
                       <Button
                         variant="outline"
                         className="flex items-center gap-2 text-[#163868] border-[#163868]"
-                        onClick={() => window.open("/pdf/CompanyProfilePTAKP.pdf", "_blank")}
+                        onClick={() =>
+                          window.open('/pdf/CompanyProfilePTAKP.pdf', '_blank')
+                        }
                       >
                         <Download className="h-4 w-4" />
-                          Unduh Profil
+                        Unduh Profil
                       </Button>
                     </div>
                   </AccordionContent>
@@ -128,7 +171,9 @@ export default function CompanyHeroSection() {
                     <Target className="h-4 w-4 mr-2" />
                     <span>Visi dan Misi</span>
                   </AccordionTrigger>
-                  <AccordionContent className="pt-4 pb-6">{renderContent("visionMission")}</AccordionContent>
+                  <AccordionContent className="pt-4 pb-6">
+                    {renderContent('visionMission')}
+                  </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="specialty">
@@ -136,13 +181,20 @@ export default function CompanyHeroSection() {
                     <Award className="h-4 w-4 mr-2" />
                     <span>Keahlian</span>
                   </AccordionTrigger>
-                  <AccordionContent className="pt-4 pb-6">{renderContent("specialty")}</AccordionContent>
+                  <AccordionContent className="pt-4 pb-6">
+                    {renderContent('specialty')}
+                  </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </CardContent>
           ) : (
             // Desktop: Tabs
-            <Tabs defaultValue="aboutUs" value={selectedContent} onValueChange={setSelectedContent} className="w-full">
+            <Tabs
+              defaultValue="aboutUs"
+              value={selectedContent}
+              onValueChange={setSelectedContent}
+              className="w-full"
+            >
               <div className="px-4 sm:px-6">
                 <TabsList className="grid w-full grid-cols-3 mb-6">
                   <TabsTrigger
@@ -181,10 +233,12 @@ export default function CompanyHeroSection() {
                     <Button
                       variant="outline"
                       className="flex items-center gap-2 text-[#163868] border-[#163868]"
-                      onClick={() => window.open("/pdf/CompanyProfilePTAKP.pdf", "_blank")}
+                      onClick={() =>
+                        window.open('/pdf/CompanyProfilePTAKP.pdf', '_blank')
+                      }
                     >
                       <Download className="h-4 w-4" />
-                        Unduh Profil
+                      Unduh Profil
                     </Button>
                   </div>
                 </TabsContent>
@@ -195,7 +249,9 @@ export default function CompanyHeroSection() {
                       {content.visionMission.title}
                     </CardTitle>
                   </CardHeader>
-                  <p className="text-gray-700">{content.visionMission.description}</p>
+                  <p className="text-gray-700">
+                    {content.visionMission.description}
+                  </p>
                   <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
                     {content.visionMission.list?.map((item, index) => (
                       <li key={index} className="ml-2">
@@ -211,7 +267,9 @@ export default function CompanyHeroSection() {
                       {content.specialty.title}
                     </CardTitle>
                   </CardHeader>
-                  <p className="text-gray-700">{content.specialty.description}</p>
+                  <p className="text-gray-700">
+                    {content.specialty.description}
+                  </p>
                   <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
                     {content.specialty.list?.map((item, index) => (
                       <li key={index} className="ml-2">
