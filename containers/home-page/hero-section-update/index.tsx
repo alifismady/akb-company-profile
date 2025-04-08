@@ -106,7 +106,7 @@ export default function CompanyHeroSection() {
                 <AccordionItem value="aboutUs">
                   <AccordionTrigger className="flex items-center gap-2 text-[#163868] py-4">
                     <Building className="h-4 w-4 mr-2" />
-                    <span>About Us</span>
+                    <span>Tentang Kami</span>
                   </AccordionTrigger>
                   <AccordionContent className="pt-4 pb-6">
                     {renderContent("aboutUs")}
@@ -117,7 +117,7 @@ export default function CompanyHeroSection() {
                         onClick={() => window.open("/pdf/CompanyProfilePTAKP.pdf", "_blank")}
                       >
                         <Download className="h-4 w-4" />
-                        Download Company Profile
+                          Unduh Profil
                       </Button>
                     </div>
                   </AccordionContent>
@@ -126,7 +126,7 @@ export default function CompanyHeroSection() {
                 <AccordionItem value="visionMission">
                   <AccordionTrigger className="flex items-center gap-2 text-[#163868] py-4">
                     <Target className="h-4 w-4 mr-2" />
-                    <span>Vision and Mission</span>
+                    <span>Visi dan Misi</span>
                   </AccordionTrigger>
                   <AccordionContent className="pt-4 pb-6">{renderContent("visionMission")}</AccordionContent>
                 </AccordionItem>
@@ -134,7 +134,7 @@ export default function CompanyHeroSection() {
                 <AccordionItem value="specialty">
                   <AccordionTrigger className="flex items-center gap-2 text-[#163868] py-4">
                     <Award className="h-4 w-4 mr-2" />
-                    <span>Specialty</span>
+                    <span>Keahlian</span>
                   </AccordionTrigger>
                   <AccordionContent className="pt-4 pb-6">{renderContent("specialty")}</AccordionContent>
                 </AccordionItem>
@@ -150,21 +150,21 @@ export default function CompanyHeroSection() {
                     className="flex items-center gap-2 data-[state=active]:bg-[#163868] data-[state=active]:text-white"
                   >
                     <Building className="h-4 w-4 hidden sm:inline" />
-                    <span>About Us</span>
+                    <span>Tentang Kami</span>
                   </TabsTrigger>
                   <TabsTrigger
                     value="visionMission"
                     className="flex items-center gap-2 data-[state=active]:bg-[#163868] data-[state=active]:text-white"
                   >
                     <Target className="h-4 w-4 hidden sm:inline" />
-                    <span>Vision and Mission</span>
+                    <span>Visi dan Misi</span>
                   </TabsTrigger>
                   <TabsTrigger
                     value="specialty"
                     className="flex items-center gap-2 data-[state=active]:bg-[#163868] data-[state=active]:text-white"
                   >
                     <Award className="h-4 w-4 hidden sm:inline" />
-                    <span>Specialty</span>
+                    <span>Keahlian</span>
                   </TabsTrigger>
                 </TabsList>
               </div>
@@ -184,7 +184,7 @@ export default function CompanyHeroSection() {
                       onClick={() => window.open("/pdf/CompanyProfilePTAKP.pdf", "_blank")}
                     >
                       <Download className="h-4 w-4" />
-                      Download Company Profile
+                        Unduh Profil
                     </Button>
                   </div>
                 </TabsContent>
