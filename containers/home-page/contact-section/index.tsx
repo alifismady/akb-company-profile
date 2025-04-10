@@ -18,7 +18,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="bg-gray-50 py-12 w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16">
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Left Column - Contact Info split into 2 columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:mt-8">
             {/* First Column - Location & Phone */}
@@ -115,7 +115,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-1">
             <div className="relative w-full max-w-xs mx-auto h-[220px] md:h-[300px]">
               <div className="absolute w-[75%] h-[75%] bg-red-500 rounded-2xl transform rotate-45 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
               <div className="absolute inset-0 m-auto w-[85%] h-[85%] bg-white p-3 shadow-md z-10 flex items-center justify-center">
@@ -130,7 +130,7 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
+            {/* <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
               <div className="p-3 flex items-center justify-center h-32">
                 <Image
                   src="/images/certifications/iso-logo.png"
@@ -149,7 +149,7 @@ export default function ContactSection() {
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
