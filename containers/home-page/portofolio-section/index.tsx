@@ -33,6 +33,12 @@ const PortfolioSection: React.FC = () => {
     "/images/example-works/example-work-8.jpeg",
     "/images/example-works/example-work-9.jpeg",
     "/images/example-works/example-work-10.jpeg",
+    "/images/example-works/example-work-11.jpeg",
+    "/images/example-works/example-work-12.jpeg",
+    "/images/example-works/example-work-13.jpeg",
+    "/images/example-works/example-work-14.jpeg",
+    "/images/example-works/example-work-15.jpeg",
+    "/images/example-works/example-work-16.jpeg",
   ]
 
   const navButtonStyles = "opacity-40 hover:opacity-100 transition-opacity"
