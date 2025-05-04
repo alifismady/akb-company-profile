@@ -48,12 +48,12 @@ export default function ContactSection() {
                   </h3>
                   <div className="space-y-1">
                     <Link
-                      href="https://wa.me/6281108029183"
+                      href="https://wa.me/6287849452408"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-gray-700 hover:text-[#163868] hover:underline transition-colors text-sm"
                     >
-                      (+62) 811 0802 9183
+                      (+62) 878 4945 2408
                     </Link>
                     <Link
                       href="https://wa.me/628991230029"
