@@ -56,12 +56,12 @@ export default function ContactSection() {
                       (+62) 878 4945 2408
                     </Link>
                     <Link
-                      href="https://wa.me/628991230029"
+                      href="https://wa.me/6285218045930"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-gray-700 hover:text-[#163868] hover:underline transition-colors text-sm"
                     >
-                      (+62) 899 1230 029
+                      (+62) 852 1804 5930
                     </Link>
                   </div>
 
